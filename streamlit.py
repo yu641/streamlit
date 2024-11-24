@@ -1,6 +1,8 @@
 import streamlit as st 
 import pyogrio
 
+pyogrio.core._register_drivers()
+
 st.title('시군구별 합계출산율')
 
 import geopandas as gpd
