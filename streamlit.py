@@ -9,12 +9,10 @@ import geopandas as gpd
 import pandas as pd
 import matplotlib.pyplot as plt
 
-plt.rcParams['font.family'] ='Malgun Gothic'
-
-gdf_korea_sido = gpd.read_file('C:/vis/geodata/sido.json')
+gdf_korea_sido = gpd.read_file('C:/vis/geodata/sido.json',engine="pyogrio")
 
 
-df=pd.read_excel("C:/vis/totalfertilityratenew.xlsx")
+df=pd.read_excel("C:/vis/totalfertilityratenew.xlsx",engine="pyogrio")
 
 
 korea_5179 = gdf_korea_sido.to_crs(epsg=5179,inplace=False)
