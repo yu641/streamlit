@@ -1,4 +1,4 @@
-import streamlit as st # streamlit 라이브러리 임포트
+import streamlit as st 
 
 st.title('시군구별 합계출산율')
 
