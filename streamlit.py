@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 gdf_korea_sido = gpd.read_file('sido.json')
-df=pd.read_excel("totalfertilityratenew.xlsx")
+df = pd.read_excel('totalfertilityratenew.xlsx')
 
 
 korea_5179 = gdf_korea_sido.to_crs(epsg=5179,inplace=False)
