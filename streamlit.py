@@ -1,5 +1,4 @@
 import streamlit as st 
-import pyogrio
 
 st.title('시군구별 합계출산율')
 
@@ -7,10 +6,8 @@ import geopandas as gpd
 import pandas as pd
 import matplotlib.pyplot as plt
 
-gdf_korea_sido = gpd.read_file('sido.json',engine="pyogrio")
-
-
-df=pd.read_excel("totalfertilityratenew.xlsx",engine="pyogrio")
+gdf_korea_sido = gpd.read_file('sido.json')
+df=pd.read_excel("totalfertilityratenew.xlsx")
 
 
 korea_5179 = gdf_korea_sido.to_crs(epsg=5179,inplace=False)
