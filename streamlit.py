@@ -17,7 +17,7 @@ gp=df[['합계출산율']]
 print(gp.head())
 
 gdf=pd.concat([gdf_korea_sido, gp], axis=1)
-print(gdf)
+print(gdf.head())
 
 ax = gdf.plot(column='합계출산율', legend=True, cmap="Reds", k=5)
 ax.set_axis_off()
