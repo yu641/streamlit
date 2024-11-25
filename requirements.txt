@@ -4,4 +4,3 @@ geopandas
 matplotlib
 pyogrio
 openpyxl
-json
