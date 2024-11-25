@@ -9,12 +9,9 @@ import matplotlib.pyplot as plt
 gdf_korea_sido = gpd.read_file('sido.json')
 df = pd.read_excel('totalfertilityratenew.xlsx',engine='openpyxl')
 
-
 korea_5179 = gdf_korea_sido.to_crs(epsg=5179,inplace=False)
 
-
 gp=df[['합계출산율']]
-print(gp.head())
 
 gdf=pd.concat([gdf_korea_sido, gp], axis=1)
 print(gdf.head())
