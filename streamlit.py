@@ -5,6 +5,7 @@ st.title('시군구별 합계출산율')
 import geopandas as gpd
 import pandas as pd
 import matplotlib.pyplot as plt
+import json
 
 gdf_korea_sido = gpd.read_file('sido.json')
 df = pd.read_excel('totalfertilityratenew.xlsx',engine='openpyxl')
